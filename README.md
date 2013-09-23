@@ -18,7 +18,8 @@ Simple animation of scroll
 
 ###Containers 
 
-```<div id="content1"  class="box">
+```
+<div id="content1"  class="box">
 	<h2>Content 1</h2>
 </div>
 <div id="content2" class="box">
@@ -29,7 +30,8 @@ Simple animation of scroll
 </div>
 <div id="content4" class="box">
 	<h2>Content 4</h2>
-</div>```
+</div>
+```
 
 ###JS
 
