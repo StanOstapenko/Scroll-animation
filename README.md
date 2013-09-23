@@ -7,12 +7,14 @@ Simple animation of scroll
 
 ###Navigation 
 
-```<nav>
+```
+<nav>
   <a class="scrollLink" data-to="#content1" href="#">To content1</a>
   <a class="scrollLink" data-to="#content2" href="#">To content2</a>
   <a class="scrollLink" data-to="#content3" href="#">To content3</a>
   <a class="scrollLink" data-to="#content4" href="#">To content4</a>
-</nav>```
+</nav>
+```
 
 ###Containers 
 
