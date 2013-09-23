@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scroll</title>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="scrollTo.js"></script>
+</head>
+
+<style type="text/css">
+
+    nav {
+      position: fixed;	
+      width: 100px;
+      top: 10px;
+      left: 20px;
+      background: #ffecdb;
+      border-radius: 5px;
+      padding: 5px 10px;
+    }
+
+    nav a {
+      color: #000;
+      line-height: 26px;
+      display: block;
+      font-size: 20px;
+    }
+
+    .box {
+      min-height: 400px;
+      width: 70%;
+      border-radius: 10px;
+      border: 2px solid #000;
+      margin: 40px auto;
+      padding: 40px;
+      background: #f9ffd9;
+    }
+
+    h2 {
+    	margin: 0 0 10px 0;
+    }
+
+</style>
+
+<body>
+
+<nav>
+  <a class="scrollLink" data-to="#content1" href="#">To content1</a>
+  <a class="scrollLink" data-to="#content2" href="#">To content2</a>
+  <a class="scrollLink" data-to="#content3" href="#">To content3</a>
+  <a class="scrollLink" data-to="#content4" href="#">To content4</a>
+</nav>
+
+<div id="content1"  class="box">
+	<h2>Content 1</h2>
+</div>
+<div id="content2" class="box">
+	<h2>Content 2</h2>
+</div>
+<div id="content3" class="box">
+	<h2>Content 3</h2>
+</div>
+<div id="content4" class="box">
+	<h2>Content 4</h2>
+</div>
+
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+    $('.scrollLink').scrollTo({
+      speed: 800,
+      direction: 'data-to'
+    });
+
+
+  });
+
+
+</script>
+
+</body>
+</html>
