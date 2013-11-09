@@ -25,6 +25,10 @@
       font-size: 20px;
     }
 
+    .active {
+      background:#FFEC8F;
+    }
+
     .box {
       min-height: 400px;
       width: 70%;
@@ -43,11 +47,11 @@
 
 <body>
 
-<nav>
-  <a class="scrollLink" data-to="#content1" href="#">To content1</a>
-  <a class="scrollLink" data-to="#content2" href="#">To content2</a>
-  <a class="scrollLink" data-to="#content3" href="#">To content3</a>
-  <a class="scrollLink" data-to="#content4" href="#">To content4</a>
+<nav class="navHolder">
+  <a class="scrollLink" data-to="#content1" href="#cont1">To content1</a>
+  <a class="scrollLink" data-to="#content2" href="#cont2">To content2</a>
+  <a class="scrollLink" data-to="#content3" href="#cont3">To content3</a>
+  <a class="scrollLink" data-to="#content4" href="#cont4">To content4</a>
 </nav>
 
 <div id="content1"  class="box">
@@ -71,8 +75,6 @@
       speed: 800,
       direction: 'data-to'
     });
-
-
   });
 
 
